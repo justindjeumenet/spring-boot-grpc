@@ -5,8 +5,8 @@ grpc:
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306/grpc
-    username: justin
-    password: Shannon2010@
+    username: ton_user_name
+    password: ton_mot_de_passe
     driverClassName: com.mysql.cj.jdbc.Driver
     data: data.sql
 
