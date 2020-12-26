@@ -1,0 +1,5 @@
+rootProject.name = 'spring-boot-grpc'
+include 'proto'
+include 'movie-service'
+include 'user-service'
+include 'aggregator-service'

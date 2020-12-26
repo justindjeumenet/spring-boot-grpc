@@ -1,0 +1,31 @@
+syntax = 'proto3';
+
+import "google/protobuf/wrappers.proto";
+import "common/genre.proto";
+
+option java_multiple_files = true;
+option java_package = "com.monquo.proto.models.movie";
+
+
+// DTO
+message MovieDto {
+  string title = 1;
+  int32 year = 2;
+  double rating = 3;
+}
+
+// Requests
+message MovieSearchRequest {
+  common.Genre genre = 1;
+}
+
+// Response
+message MovieSearchResponse {
+  repeated MovieDto movie = 1;
+}
+
+
+// Services
+service MovieService {
+  rpc getMovies(MovieSearchRequest) returns (MovieSearchResponse);
+}

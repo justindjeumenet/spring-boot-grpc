@@ -1,0 +1,18 @@
+grpc:
+  server:
+    port: 6565
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/movie_service
+    username: justin
+    password: Shannon2010@
+    driverClassName: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    #properties: 'org.hibernate.dialect.MySQL8Dialect'
+
+server:
+  port: 9091

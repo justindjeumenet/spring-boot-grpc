@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+    id "io.freefair.lombok" version "5.3.0"
+}
+
+group 'com.monquo'
+version '0.0.1-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.4.1'
+    implementation project(':proto')
+    // https://mvnrepository.com/artifact/net.devh/grpc-client-spring-boot-starter
+    compile group: 'net.devh', name: 'grpc-client-spring-boot-starter', version: '2.10.1.RELEASE'
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+}
+
+test {
+    useJUnitPlatform()
+}

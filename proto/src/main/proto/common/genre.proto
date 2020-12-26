@@ -1,0 +1,15 @@
+syntax = 'proto3';
+
+package common;
+
+import 'google/protobuf/wrappers.proto';
+option java_multiple_files = true;
+option java_package = "com.monquo.proto.models.common";
+
+
+enum Genre {
+  DRAMA = 0;
+  ACTION = 1;
+  CRIME = 2;
+  WESTERN = 3;
+}

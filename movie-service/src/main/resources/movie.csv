@@ -1,0 +1,22 @@
+id,title,year,rating,genre
+1,The Shawshank Redemption,1994,9.3,DRAMA
+2,The Godfather,1972,9.3,DRAMA
+3,Pulp Fiction,1994,8.9,CRIME
+4,The good the bad and the ugly,1966,8.8,WESTERN
+5,Inception,2010,8.8,ACTION
+6,Se7en,1995,8.6,CRIME
+7,City of God,2002,8.06,CRIME
+8,Django unchained,2012,8.4,WESTERN
+9,Oldboy,2003,8.43,ACTION
+
+
+insert into movie (id, title, year, rating, genre) values (1,'The Shawshank Redemption',1994,9.3,'DRAMA');
+insert into movie (id, title, year, rating, genre) values (2,'The Godfather',1972,9.3,'DRAMA');
+insert into movie (id, title, year, rating, genre) values (3,'Pulp Fiction',1994,8.9,'CRIME');
+insert into movie (id, title, year, rating, genre) values (4,'The good the bad and the ugly',1966,8.8,'WESTERN');
+insert into movie (id, title, year, rating, genre) values (5,'Inception',2010,8.8,'ACTION');
+insert into movie (id, title, year, rating, genre) values (6,'Se7en',1995,8.6,'CRIME)';
+insert into movie (id, title, year, rating, genre) values (7,'City of God',2002,8.06,'CRIME');
+insert into movie (id, title, year, rating, genre) values (8,'Django unchained',2012,8.4,'WESTERN');
+insert into movie (id, title, year, rating, genre) values (9,'Oldboy',2003,8.43,'ACTION');
+
